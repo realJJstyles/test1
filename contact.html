@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JJ Seeds</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="legal.html">Legal</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>Get in Touch</h1>
+            <p>We love hearing from our community! Whether it's questions about our products, feedback, or collaboration ideas, we're here for you.</p>
+            
+            <form id="contact-form" action="MAILTO:info@jjseeds.com" method="post" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+                <p>Email: <a href="mailto:info@jjseeds.com">info@jjseeds.com</a></p>
+                <!-- If you have social media, you can add links here -->
+                <p>Follow us on:</p>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">X</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 JJ Seeds. All rights reserved.</p>
+        <nav>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">X</a>
+        </nav>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

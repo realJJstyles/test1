@@ -1,0 +1,198 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #00172D; /* Deep blue background */
+    color: #E9F8F9; /* Light cyan text for readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header, footer {
+    background: #00334E; /* Darker blue for contrast */
+    color: #CFF09E; /* Soft green text */
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #AED6F1; /* Light blue for navigation links */
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 77, 64, 0.2); /* Green tint on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: #CFF09E; /* Soft green for headings */
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to bottom, #00334E, #004D40); /* Gradient from blue to green */
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+
+.hero h1 {
+    color: #E9F8F9;
+}
+
+.hero p {
+    color: #AED6F1;
+    margin: 1rem 0;
+}
+
+.strain-teasers a {
+    display: inline-block;
+    padding: 1rem;
+    background: #004D40; /* Dark green background */
+    color: #E9F8F9; /* Light text */
+    text-decoration: none;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Product section */
+.product {
+    background: #00334E;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 1rem;
+    border: 2px solid #CFF09E;
+}
+
+/* About and Legal sections */
+.about-section, .legal-section {
+    background: #00334E;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 1rem;
+    color: #AED6F1;
+}
+
+form input, form textarea, form button {
+    background: #004D40;
+    border: 1px solid #AED6F1;
+    color: #E9F8F9;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+form button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00796B;
+}
+
+/* FAQ styles */
+.faq-section details {
+    background: #00334E;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.faq-section summary {
+    color: #CFF09E;
+    cursor: pointer;
+}
+
+.faq-section details p {
+    color: #AED6F1;
+    padding-top: 0.5rem;
+}
+
+/* Blog styles */
+.blog-post {
+    background: #00334E;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.blog-post h2 {
+    color: #CFF09E;
+}
+
+.blog-post .post-date {
+    color: #AED6F1;
+    font-size: 0.8em;
+}
+
+.blog-post .read-more {
+    color: #AED6F1;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+.blog-post .read-more:hover {
+    color: #E9F8F9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+footer nav a {
+    margin: 0 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+}
